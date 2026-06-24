@@ -1,0 +1,690 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #111827;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #ff6a00;
+    color: white;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #ff6a00, #ff3d00);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.95;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #ff3d00;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #111827;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+
+    background: linear-gradient(135deg, #667eea, #764ba2, #ff6a00);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+
+    min-height: 100vh;
+}
+
+/* animated background */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+.home-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    padding: 8px 12px;
+    border-radius: 10px;
+
+    background: rgba(0,0,0,0.35);
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* =========================
+   CENTER WRAPPER
+========================= */
+.auth-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.auth-card {
+    width: 380px;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(14px);
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+
+    color: white;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.auth-card:hover {
+    transform: translateY(-5px);
+}
+
+/* heading */
+.auth-card h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* subtitle */
+.subtitle {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   INPUT GROUP
+========================= */
+.input-group {
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.input-group label {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    background: rgba(255,255,255,0.9);
+
+    transition: 0.3s;
+}
+
+/* input focus effect */
+.input-group input:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(255,255,255,0.6);
+}
+.auth-wrapper button {
+    width: 100%;
+    margin-top: 15px;
+
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+
+    background: #ff6a00;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* =========================
+   LOGIN BUTTON (CTA STYLE)
+========================= */
+.Create-auth button {
+    width: 100%;
+    margin-top: 15px;
+
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+
+    background: #ff6a00;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Create-auth button:hover {
+    background: #ff3d00;
+    transform: scale(1.05);
+}
+
+.Create-auth {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.create-card {
+    width: 380px;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(14px);
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+
+    color: white;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.create-card:hover {
+    transform: translateY(-5px);
+}
+
+/* heading */
+.create-card h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* subtitle */
+.subtitlee {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
+
+
+.input {
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.input label {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.input input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    background: rgba(255,255,255,0.9);
+
+    transition: 0.3s;
+}
+
+/* input focus effect */
+.input input:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(255,255,255,0.6);
+}
+
+/* =========================
+   LOGIN BUTTON (CTA STYLE)
+========================= */
+.create-card button {
+    width: 100%;
+    margin-top: 15px;
+
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+
+    background: #ff6a00;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.create-card button:hover {
+    background: #ff3d00;
+    transform: scale(1.05);
+}
+.forgot-password{
+    text-align: right;
+    margin: 10px 0 20px;
+}
+
+.forgot-password a{
+    text-decoration: none;
+    color: #04050a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.forgot-password a:hover{
+    text-decoration: underline;
+}
+/* =========================
+   SWITCH TEXT
+========================= */
+.switch-text {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.switch-text a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.switch-text a:hover {
+    color: #ffe600;
+}
+/* =========================
+   FEATURE SECTION TITLE
+========================= */
+.featured-products h2 {
+    text-align: center;
+    margin: 40px 0 10px;
+    font-size: 26px;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+.products {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+/* =========================
+   PRODUCT CARD (MODERN LOOK)
+========================= */
+.product-card {
+    background: rgb(74, 209, 254);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+.product-card img {
+    width: 50%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.product-card h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product-card p {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+.product-card strong {
+    display: block;
+    margin-top: 8px;
+    color: #ff3d00;
+    font-size: 15px;
+}
+
+/* BUTTON */
+.product-card button {
+    margin-top: 12px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: #111827;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card button:hover {
+    background: #ff6a00;
+    transform: scale(1.03);
+}
+.product-index {
+    background: rgb(74, 209, 254);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.product-index:hover {
+    transform: translateY(-6px);
+}
+.product-index img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.product-index h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product-index p {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+.product-index strong {
+    display: block;
+    margin-top: 8px;
+    color: #ff3d00;
+    font-size: 15px;
+}
+
+/* BUTTON */
+.product-index button {
+    margin-top: 12px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: #111827;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-index button:hover {
+    background: #ff6a00;
+    transform: scale(1.03);
+}
+
+/* =========================
+   FOOTER (MODERN)
+========================= */
+footer {
+    margin-top: 40px;
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+}
+.cart-summary {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    color: white;
+
+    width: 400px;
+    margin: 30px auto;
+
+    padding: 25px;
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+.cart-summary h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+#total-items {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.checkout-btn {
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #ff6a00,
+        #ff3d00
+    );
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    transform: translateY(-2px);
+}
+/* =========================
+   FORGOT PASSWORD PAGE
+========================= */
+
+.forgot-wrapper{
+    min-height: 100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #f5f7fa,
+        #c3cfe2
+    );
+
+    padding:20px;
+}
+
+.forgot-card{
+    width:100%;
+    max-width:420px;
+
+    background:white;
+
+    padding:35px;
+    border-radius:18px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.1);
+
+    text-align:center;
+}
+
+.forgot-card h2{
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.subtitle{
+    color:#6b7280;
+    font-size:14px;
+
+    margin-bottom:25px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+    text-align:left;
+}
+
+.input-group label{
+    margin-bottom:6px;
+
+    font-weight:600;
+    color:#374151;
+}
+
+.input-group input{
+    padding:12px;
+
+    border:1px solid #d1d5db;
+    border-radius:10px;
+
+    font-size:14px;
+}
+
+.input-group input:focus{
+    outline:none;
+
+    border-color:#ff6a00;
+}
+
+.forgot-card button{
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#ff6a00;
+    color:white;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.forgot-card button:hover{
+    background:#ff3d00;
+}
+
+.switch-text{
+    margin-top:20px;
+}
+
+.switch-text a{
+    color:#ff6a00;
+    text-decoration:none;
+    font-weight:600;
+}
